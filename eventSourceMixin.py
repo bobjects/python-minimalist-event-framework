@@ -14,7 +14,6 @@ class EventSourceMixin(object):
                 self.eventsAndObservingMethods[eventName].remove(observingMethod)
 
     def triggerEvent(self, eventName):
-        # TODO
         if eventName in self.eventsAndObservingMethods:
             for observingMethod in self.eventsAndObservingMethods[eventName]:
                 observingMethod()

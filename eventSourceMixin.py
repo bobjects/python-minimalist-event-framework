@@ -1,7 +1,6 @@
 class EventSourceMixin(object):
     def __init__(self):
         self.eventsAndObservingMethods = {}
-        pass
 
     def whenEventDo(self, eventName, observingMethod):
         if eventName not in self.eventsAndObservingMethods:
